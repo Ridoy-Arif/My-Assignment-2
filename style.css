@@ -224,7 +224,10 @@
 
 
    .container-2{
-   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    }
 
    .parent-2{
@@ -270,8 +273,289 @@
   /* .........container-3 */
 
 
-  .container-3 h1, p{
+  .box h1, p{
+    color: white;
+
+  }
+
+  .box h1{
+    font-size: 30px;
+  }
+
+  .box p{
+    font-size: 20px;
+  }
+
+
+  .box {
+    /* margin: 0 auto; */
+    background-color: rgb(36, 19, 19);
+    border-radius: 20px;
+    margin: 50px 0px;
+    
+  }
+
+
+  .parent-3 .col-1{
+    width: 45%;
+    margin-left: 60px;
+  }
+
+  .parent-3 .col-2{
+    width: 45%;
+    margin-left: 350px;
+  }
+
+
+  .parent-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .col-2 img{
+    width: 80%;
+    height: auto;
+  }
+
+
+
+  /* ............container-4 */
+
+
+  .container-4{
+    background-color: rgb(5, 15, 15);
+  }
+
+
+  .container-4 table tr td{
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+  }
+
+  .container-4 h1 {
+    color: azure;
+  }
+
+  .container-4 .col-3{
+    width: 30%;
+    margin-top: 30px;
+  }
+
+  .parent-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-4 .col-4{
+    width: 60%;
+    margin-bottom: 20px;
+    /* margin-left: 200px; */
+  }
+
+  table{
+    border-collapse: collapse;
+    
+    
+  }
+
+  .input-field{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+
+  /* ........container-5 */
+
+
+  .container-5{
+    
+  }
+
+
+  .one{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    
+  }
+
+  .one img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .parent-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 28, 28);
+    margin-top: 50px;
+    padding: 40px 10px;
+    border-radius: 20px;
+  }
+
+
+  .col-5{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+
+  .col-5 h1{
     color: white;
   }
 
+
+ 
+
+  .one p{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    
+
+  }
+
+  .head-1{
+    color: azure;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+  }
+
+  .para{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+
+  .one h1{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    
+
+  }
+
+
+
+
+  /* ...........container-6 */
+
+
+  .container-6{
+    background-color: rgb(0, 5, 6);
+    margin-top: 60px;
+    margin-bottom: 40px;
+   
+  }
+
+
+  .parent-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .column-1{
+    width: 50%;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    
+  }
+  .column-2{
+    width: 30%;
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    
+    
+  }
+  .column-3{
+    width: 30%;
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+   
+  }
+
   
+
+
+  .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+
+  }
+
+  .head{
+    color: azure;
+    margin-bottom: 20px;
+  }
+
+
+
+
+  @media screen and (max-width:576px){
+
+    .parent-6{
+      flex-direction: column;
+    }
+
+    .row{
+      flex-direction: column;
+    
+    }
+
+    .column-1{
+      width:100%;
+      margin-left: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 30px;
+  
+      
+    }
+
+
+    .column-2{
+      width: 100%;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      
+      
+    }
+    
+  }
+
+
+  
+
