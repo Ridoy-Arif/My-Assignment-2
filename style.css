@@ -136,6 +136,8 @@ html,body{
     padding: 5px 15px;
     font-size: 1em;
     border-radius: 20px;
+    margin: 15px 0px;
+    /* width: 30%; */
   }
 
 
@@ -275,6 +277,28 @@ html,body{
 
 
 
+  @media screen and (max-width:576px) {
+
+
+    .parent-2{
+      flex-direction: column;
+      width: 100%;
+    }
+    .parent-2 .col img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      
+      
+    }
+
+    .col{
+      width: 100%;
+    }
+    
+  }
+
+
 
   /* .........container-3 */
 
@@ -286,10 +310,12 @@ html,body{
 
   .box h1{
     font-size: 30px;
+    margin: 10px 0px;
   }
 
   .box p{
     font-size: 20px;
+    margin: 5px 0px;
   }
 
 
@@ -298,6 +324,7 @@ html,body{
     background-color: rgb(36, 19, 19);
     border-radius: 20px;
     margin: 50px 0px;
+    
     
   }
 
@@ -318,11 +345,69 @@ html,body{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    width: 90%;
   }
 
   .col-2 img{
     width: 80%;
     height: auto;
+  }
+
+  .btn-2{
+    background-color: tomato;
+    padding: 5px 15px;
+    font-size: 1em;
+    border-radius: 20px;
+    margin: 15px 0px;
+    width: 50%;
+  }
+
+
+
+  @media screen and (max-width:576px){
+
+
+    .box{
+      width: 100%;
+    }
+
+    .parent-3{
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      padding: 0px;
+    }
+
+    .parent-3 .col-1{
+      width: 100%;
+      margin-left: 20px;
+    }
+
+    .parent-3 .col-2{
+      width: 100%;
+      margin-left: 20px;
+      
+      
+
+    }
+
+    .col-2 img{
+      width: 100%;
+      height: auto;
+      /* margin-left: 250px; */
+    }
+
+    .btn-2{
+      width: 50%;
+    }
+
+    .col-1 h1{
+      font-size: 30px;
+      margin: 10px 0px;
+      width: 100%;
+    }
+    
+    
   }
 
 
@@ -332,6 +417,7 @@ html,body{
 
   .container-4{
     background-color: rgb(5, 15, 15);
+    padding: 20px 0px;
   }
 
 
@@ -347,7 +433,8 @@ html,body{
 
   .container-4 .col-3{
     width: 30%;
-    margin-top: 30px;
+    margin-bottom: 60px;
+
   }
 
   .parent-4{
@@ -358,8 +445,21 @@ html,body{
 
   .container-4 .col-4{
     width: 60%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* margin-left: 200px; */
+  }
+
+  .btn-3{
+    background-color: tomato;
+    padding: 5px 15px;
+    font-size: 1em;
+    border-radius: 20px;
+    margin: 15px 0px;
+    width: 30%;
+  }
+
+  .col-4 h1{
+    margin: 10px 0px;
   }
 
   table{
@@ -372,8 +472,55 @@ html,body{
 
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    padding: 10px 0px;
+    
     column-gap: 20px;
     row-gap: 10px;
+  }
+
+  .input-field input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  #sex{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  .option select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+
+
+  @media screen and (max-width:576px){
+    .parent-4{
+      flex-direction: column;
+    }
+
+    .container-4 .col-3{
+      width: 100%;
+    }
+    .container-4 .col-4{
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .container-4 h1 {
+      color: azure;
+      font-size: 30px;
+    }
+
+    .container-4 table tr td{
+      width: 100%;
+    }
+  
   }
 
 
