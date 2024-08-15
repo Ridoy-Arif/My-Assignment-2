@@ -114,8 +114,10 @@ html,body{
 
   .text-2 p{
     color: azure;
-    margin-bottom: 15px;
+    margin-bottom:20px;
   }
+
+  
 
   .grey-qo-regular {
     font-family: "Grey Qo", cursive;
@@ -403,7 +405,7 @@ html,body{
       flex-direction: column;
       justify-content: start;
       align-items: start;
-      padding: 0px;
+      padding: 20px;
     }
 
     .parent-3 .col-1{
@@ -431,6 +433,12 @@ html,body{
 
     .col-1 h1{
       font-size: 30px;
+      margin: 10px 0px;
+      width: 100%;
+    }
+
+    .col-1 p{
+      font-size: 20pxpx;
       margin: 10px 0px;
       width: 100%;
     }
@@ -480,14 +488,18 @@ html,body{
   .btn-3{
     background-color: tomato;
     padding: 5px 15px;
-    font-size: 1em;
+    font-size: 30px;
     border-radius: 20px;
     margin: 15px 0px;
-    width: 30%;
+    /* width: 30%; */
   }
 
   .col-4 h1{
     margin: 10px 0px;
+  }
+
+  .col-4 p{
+    font-size: 20px;
   }
 
   table{
